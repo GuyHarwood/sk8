@@ -7,7 +7,7 @@
 <div id="updatesContainer" data-ng-controller="updatesController">
 	<div id="recentUpdates" class="row" data-ng-repeat="updateType in updateTypes">
 		<h3>{{ updateType }}</h3>
-		<article class="updateCard" data-ng-repeat="park in updates | filter:{updateType:park.updateType}">
+		<article class="updateCard" data-ng-repeat="park in updates | filter:{updateType:updateType}">
 			<h4>{{ park.name }}</h4>
 		</article>	
 	</div>
