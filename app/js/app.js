@@ -2,9 +2,9 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']).
+angular.module('sk8', ['sk8.filters', 'sk8.services', 'sk8.directives', 'sk8.controllers']).
   config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-    $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-    $routeProvider.otherwise({redirectTo: '/view1'});
+    $routeProvider.when('/', {templateUrl: 'partials/updates.html', controller: 'updatesController'});
+    $routeProvider.when('/map', {templateUrl: 'partials/map.html', controller: 'mapController'});
+    $routeProvider.otherwise({redirectTo: '/'});
   }]);

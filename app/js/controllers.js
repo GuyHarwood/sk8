@@ -2,10 +2,20 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
-
+angular.module('sk8.controllers', []).
+  controller('updatesController', [function($scope) {
+  		$scope.updateTypes = [
+  			'recent',
+  			'nearby',
+  			'popular'
+  		];
+  		$scope.updates = [
+  			{
+  				name : 'New Skatepark',
+  				updateType : 
+  			}
+  		];
   }])
-  .controller('MyCtrl2', [function() {
+  .controller('mapController', [function() {
 
   }]);

@@ -1,0 +1,14 @@
+<p>Updates View</p>
+<ol>
+	<li>show tiles / cards with small image</li>
+	<li>touching card pushes it out and centers it</li>
+	<li>Strips can be different categories - nearby, recent, popular, images, corrections</li>
+</ol>
+<div id="updatesContainer" data-ng-controller="updatesController">
+	<div id="recentUpdates" class="row" data-ng-repeat="updateType in updateTypes">
+		<h3>{{ updateType }}</h3>
+		<article class="updateCard" data-ng-repeat="park in updates | filter:{updateType:park.updateType}">
+			<h4>{{ park.name }}</h4>
+		</article>	
+	</div>
+</div>
