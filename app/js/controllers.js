@@ -21,6 +21,10 @@ angular.module('sk8.controllers', []).
   			{
   				name : 'Close Skatepark',
   				updateType : 'nearby'
+  			},
+  			{
+  				name : 'Another new skatepark',
+  				updateType : 'additions'
   			}
   		];
   })
