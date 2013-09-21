@@ -4,7 +4,7 @@ modernisation of sk8loc8 to SPA using angular.
 based on angular seed.
 
 
-### local web server and test runner (defaults to port 8000)
+### dev env settings (osx)
 
 * `python -m SimpleHTTPServer`
 * or for node `scripts/web-server.js`
