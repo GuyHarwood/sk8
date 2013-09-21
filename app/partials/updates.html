@@ -5,7 +5,7 @@
 	<li>Strips can be different categories - nearby, recent, popular, images, corrections</li>
 </ol>
 <div id="updatesContainer" data-ng-controller="updatesController">
-	<div id="recentUpdates" class="row" data-ng-repeat="updateType in updateTypes">
+	<div class="updates" data-ng-repeat="updateType in updateTypes">
 		<h3>{{ updateType }}</h3>
 		<article class="updateCard" data-ng-repeat="park in updates | filter:{updateType:updateType}">
 			<h4>{{ park.name }}</h4>
