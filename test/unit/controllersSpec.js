@@ -26,4 +26,11 @@ describe('Controller: updatesController', function () {
     expect(scope.updates).toBeDefined();
   });
 
+  it('should publish a canonical name for use in the URL', function(){
+    for (var i = scope.updates.length - 1; i >= 0; i--) {
+      expect(scope.updates[i].canonical).toBeDefined();
+      expect(scope.updates[i].canonical.length).toBeGreaterThan(0);
+    };
+  });
+
 });

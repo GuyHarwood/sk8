@@ -12,19 +12,23 @@ angular.module('sk8.controllers', []).
   		$scope.updates = [
   			{
   				name : 'New Skatepark',
-  				updateType : 'additions'
+  				updateType : 'additions',
+          canonical : 'new-skatepark'
   			},
   			{
   				name : 'Updated Skatepark',
-  				updateType : 'recent'
+  				updateType : 'recent',
+          canonical : 'updated-skatepark'
   			},
   			{
   				name : 'Close Skatepark',
-  				updateType : 'nearby'
+  				updateType : 'nearby',
+          canonical : 'close-skatepark'
   			},
   			{
   				name : 'Another new skatepark',
-  				updateType : 'additions'
+  				updateType : 'additions',
+          canonical : 'another-new-skatepark'
   			}
   		];
   })
