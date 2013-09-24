@@ -1,6 +1,7 @@
-# sk8loc8 -> angularize
+## sk8loc8 -> angularize
 
 modernisation of sk8loc8 to SPA using angular.
+
 based on angular seed.
 
 
@@ -10,18 +11,18 @@ based on angular seed.
 * or for node `scripts/web-server.js`
 * karma test runner `test.sh`
 
-tests are written in jasmine
+tests are written for jasmine
 
 ### Directory Layout
 
     app/                --> all of the files to be used in production
+      bower_components  --> any libraries obtained via bower (angular, bootstrap, etc)
       css/              --> css files
         app.css         --> default stylesheet
       img/              --> image files
-      index.html        --> app layout file (the main html template file of the app)
-      index-async.html  --> just like index.html, but loads js files asynchronously
+      index.html        --> app layout file 
       js/               --> javascript files
-        app.js          --> application
+        app.js          --> application init and routing
         controllers.js  --> application controllers
         directives.js   --> application directives
         filters.js      --> custom angular filters
