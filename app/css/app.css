@@ -52,3 +52,7 @@
   cursor: pointer !important;
 }
 
+#map_canvas {
+  height: 200px;
+} 
+
