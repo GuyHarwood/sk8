@@ -4,3 +4,5 @@ logs/*
 # SublimeText project files
 /*.sublime-project
 *.sublime-workspace
+
+*.log

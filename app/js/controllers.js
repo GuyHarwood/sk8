@@ -65,5 +65,20 @@ angular.module('sk8.controllers', []).
       marker.setPosition(new google.maps.LatLng(lat, lng));
   };
 
+})
+.controller('createParkController', function($scope, locationHelper){
+
+    $scope.park = {
+      name : 'enter name',
+      description : locationHelper.town,
+      lat : locationHelper.current.lat,
+      lng : locationHelper.current.lng
+    };
+
+    $scope.createPark = function(formdata){
+        //validate and POST
+        console.log('validate submission');
+        console.log('POST to server');
+    };
 });
     

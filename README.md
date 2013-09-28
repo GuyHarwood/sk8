@@ -54,3 +54,8 @@ tests are written for jasmine
         directivessSpec.js      --> specs for directives
         filtersSpec.js          --> specs for filters
         servicesSpec.js         --> specs for services
+
+### To figure out
+
+* validation (jquery?)
+* form submission - capture values for POST
